@@ -2,10 +2,11 @@ import webpack from 'webpack';
 import path from 'path';
 
 export default {
-    devtoll: 'source-map',
+    devtool: 'source-map',
     entry: [
         'eventsource-polyfill',
         'webpack-hot-middleware/client',
+        'react-hot-loader/patch',
         './src/index'
     ],
     target: 'web',
@@ -22,7 +23,7 @@ export default {
             {
                 test: /\.js$/,
                 include: path.resolve('src'),
-                use: 'babel-loader'
+                use: ['babel-loader']
             },
             {
                 test: /\.(css|scss)$/,
