@@ -5,7 +5,6 @@ export default {
     devtool: 'source-map',
     entry: [
         'eventsource-polyfill',
-        //'react-hot-loader/patch',
         'webpack-hot-middleware/client',
         './src/index'
     ],
