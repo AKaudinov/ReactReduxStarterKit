@@ -4,7 +4,7 @@ import {Link, IndexLink} from 'react-router';
 const Header = () =>{
     return (
         <div className="header">
-            <nav className="navbar bg-inverse">
+            <nav className="navbar navbar-light bg-orange">
                 <ul className="nav navbar-nav">
                     <li className="nav-item">
                         <IndexLink to="/" activeClassName="active" className="nav-link">
@@ -12,7 +12,7 @@ const Header = () =>{
                         </IndexLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" activeClassname="active" className="nav-link">
+                        <Link to="/about" activeClassName="active" className="nav-link">
                            <i className="fa fa-info-circle"/> About
                         </Link>
                     </li>

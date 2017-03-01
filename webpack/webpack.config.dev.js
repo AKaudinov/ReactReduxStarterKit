@@ -5,8 +5,8 @@ export default {
     devtool: 'source-map',
     entry: [
         'eventsource-polyfill',
+        //'react-hot-loader/patch',
         'webpack-hot-middleware/client',
-        'react-hot-loader/patch',
         './src/index'
     ],
     target: 'web',
@@ -23,7 +23,7 @@ export default {
             {
                 test: /\.js$/,
                 include: path.resolve('src'),
-                use: ['babel-loader']
+                use: ['react-hot-loader', 'babel-loader']
             },
             {
                 test: /\.(css|scss)$/,
@@ -50,7 +50,7 @@ export default {
                 noInfo: false
             }
         }),
-        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.ProvidePlugin({

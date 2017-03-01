@@ -1,12 +1,12 @@
-/*eslint-disable no-console*/
 import webpack from 'webpack';
 import webpackConfig from '../webpack/webpack.config.prod';
 import colors from 'colors'; //eslint-disable-line no-unused-vars
 /*eslint-disable no-unsued-vars*/
+/*eslint-disable no-console*/
 
 process.env.NODE_ENV = 'production';
 
-consoloe.log('Webpack generating minified bundle for production'.green);
+console.log('Webpack generating minified bundle for production'.green);
 
 webpack(webpackConfig).run((err, stats) =>{
     if(err){
