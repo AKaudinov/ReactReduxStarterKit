@@ -10,15 +10,15 @@ class AboutPage extends React.Component{
     render() {
         return (
             <div className="about-main">
-                <div className="container">
                     <div className="jumbotron about-jumbotron">
-                        <h1>Welcome to an about page</h1>
+                        <h1>About</h1>
+                        <p className="lead">Building responsive web apps
+                            with React, Redux, React-Router, ES6, and Webpack 2.</p>
                         <IndexLink to="/" className="btn btn-success">
                             <i className="fa fa-home"/> Back Home
                         </IndexLink>
                     </div>
                 </div>
-            </div>
         );
     }
 }

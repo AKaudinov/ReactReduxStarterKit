@@ -63,7 +63,7 @@ export default {
         new OptimizeCssAssetsWebpackPlugin({
            cssProcessorOptions: {zindex: false}
         }),
-        new webpack.optimize.OccureceorderPlugin(),
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin(GLOBALS),
         new webpack.optimize.UglifyJsPlugin(),
         new webpack.ProvidePlugin({

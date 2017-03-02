@@ -4,7 +4,7 @@ import {Link, IndexLink} from 'react-router';
 const Header = () => {
     return (
         <div className="header">
-            <nav className="navbar navbar-toggleable-sm navbar-light bg-faded">
+            <nav className="navbar navbar-toggleable-sm navbar-inverse bg-info">
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
