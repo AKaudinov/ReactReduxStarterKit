@@ -1,5 +1,5 @@
 /*eslint-disable import/default*/
-//disable eslint complaining about importing the 'configureStore' function with it not being exported as default
+//disable eslint complaining about importing the 'configureStore' function, which is not being exported as default
 import 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
