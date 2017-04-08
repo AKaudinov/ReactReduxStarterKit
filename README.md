@@ -8,7 +8,7 @@ if dev dependencies do not get installed, run: 'npm install --only=dev'
 #Executing the dev build
 to run the dev build, type the following: 'npm start'
 Dev build has react-hot-loader 3 enabled, and also has commented out 'redux-dev-tools' implementation
-once store is configure.
+and can be used once Redux store is configured.
 Dev build gets executed using 'webpack.config.dev.js'
 
 #Executing the prod build
